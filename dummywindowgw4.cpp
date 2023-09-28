@@ -250,7 +250,7 @@ void DummyWindowGW4::pushButton4Clicked()
 void DummyWindowGW4::pushButton5Clicked()
 {
     //Laderückmeldung frei
-    PublishMqttMessage("Charging/" + QString::number(ui->spinBox->value()) + "/Loaded",
+    PublishMqttMessage("Charging/" + QString::number(ui->spinBox->value()) + "/Connected",
                        "{\"status\": 0}");
 }
 

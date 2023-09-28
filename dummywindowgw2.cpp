@@ -160,6 +160,8 @@ void DummyWindowGW2::EnableButtons(bool enabled)
     ui->spinBox_2->setEnabled(enabled);
     ui->spinBox_3->setEnabled(enabled);
     ui->spinBox_4->setEnabled(enabled);
+    ui->spinBox_6->setEnabled(enabled);
+    ui->spinBox_7->setEnabled(enabled);
 }
 
 void DummyWindowGW2::ConnectTo(QString ip, int port){
@@ -397,5 +399,5 @@ void DummyWindowGW2::pushButton5Clicked()
 
 void DummyWindowGW2::pushButton6Clicked()
 {
-    sendStatus(ui->comboBox_2->currentIndex(), 1, 1, ui->spinBox_5->value());
+    sendStatus(ui->comboBox_2->currentIndex(), ui->spinBox_6->value(), ui->spinBox_7->value(), ui->spinBox_5->value());
 }
